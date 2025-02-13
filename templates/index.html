@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">🎭 Fun Sentiment Analysis</h1>
+        <h1 class="text-center">🎭Sentiment Analysis</h1>
         <p class="text-center">Type a review below and see how it feels! 😃😞</p>
 
         <form method="POST" class="mt-4">
@@ -29,7 +29,7 @@
         {% if sentiment %}
             <div class="result-box mt-4 {% if 'Positive' in sentiment %}positive{% else %}negative{% endif %}">
                 <h3>{{ sentiment }}</h3>
-                <p>Confidence Score: {{ (probability * 100)|round(2) }}%</p>
+                <p>Score: {{ (probability * 100)|round(2) }}%</p>
 
                 <!-- Sentiment Progress Bar -->
                 <div class="progress mt-3">
